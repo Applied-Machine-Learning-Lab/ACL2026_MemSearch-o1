@@ -13,7 +13,7 @@ def cos_sim(a: torch.Tensor, b: torch.Tensor) -> torch.Tensor:
     a_norm = F.normalize(a, p=2, dim=1)
     b_norm = F.normalize(b, p=2, dim=1) 
 
-    return torch.mm(a_norm, b_norm.transpose(0, 1))  # (n, m)
+    return torch.mm(a_norm, b_norm.transpose(0, 1))
 
 model_path = "./retrieve_model"
 
