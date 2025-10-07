@@ -3,7 +3,7 @@ In this paper, we propose MemSearch-o1, an agentic search framework built on rea
 
 This is the main implementation code of MemSearch-o1.
 
-First, you should set your API Key and Base URL in `memory_o1_adv.py':
+First, you should set your API Key and Base URL in `memory_o1_adv.py`:
 ```
 API_SECRET_KEY = "Your API Key"
 BASE_URL = "Your Base URL"
