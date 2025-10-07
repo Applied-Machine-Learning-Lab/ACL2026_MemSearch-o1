@@ -358,7 +358,6 @@ def main():
 
         
     def generate_response(model_name, memory, query):
-        # data_name = 'memory'
         if dataset_name in ['dureader', 'multifieldqa_zh']:
             prompt = ("请根据提供的上下文回答问题。只需给出答案，不要输出其他任何信息。\n"
                       "请将最终答案以 \\boxed{你的答案} 的格式提供。\n\n"
