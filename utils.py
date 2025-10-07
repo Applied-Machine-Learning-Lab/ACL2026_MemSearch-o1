@@ -1,7 +1,6 @@
 import os
 import torch
 from transformers import AutoTokenizer, AutoModel
-# from sentence_transformers.util import cos_sim
 import numpy as np
 import torch.nn.functional as F
 
