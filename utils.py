@@ -7,12 +7,12 @@ import torch.nn.functional as F
 
 def cos_sim(a: torch.Tensor, b: torch.Tensor) -> torch.Tensor:
     if a.ndim == 1:
-        a = a.unsqueeze(0)  # (d,) -> (1, d)
+        a = a.unsqueeze(0)
     if b.ndim == 1:
-        b = b.unsqueeze(0)  # (d,) -> (1, d)
+        b = b.unsqueeze(0)
 
-    a_norm = F.normalize(a, p=2, dim=1)  # (n, d)
-    b_norm = F.normalize(b, p=2, dim=1)  # (m, d)
+    a_norm = F.normalize(a, p=2, dim=1)
+    b_norm = F.normalize(b, p=2, dim=1) 
 
     return torch.mm(a_norm, b_norm.transpose(0, 1))  # (n, m)
 
