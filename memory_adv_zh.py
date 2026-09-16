@@ -12,8 +12,8 @@ sys.path.append(str(Path(__file__).resolve().parent.parent))
 import time
 import numpy as np
 
-API_SECRET_KEY = "sk-zk22528c689c68abb04cbfaf2ec6373a09868bbdef5a073b"
-BASE_URL = "https://api.zhizengzeng.com/v1"
+API_SECRET_KEY = "s"
+BASE_URL = ""
 
 class MemoryPool:
     """可更新维护的记忆池 - 所有变量均为字符串格式"""
